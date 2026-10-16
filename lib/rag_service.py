@@ -42,10 +42,10 @@ def document_search_text(document: dict[str, Any]) -> str:
     tags = " ".join(document.get("tags", []))
 
     return (
-        f"{document.get("title", "")} "
-        f"{document.get("category", "")} "
-        f"{tags} "
-        f"{document.get("text", "")}"
+        f'{document.get("title", "")} '
+        f'{document.get("category", "")} '
+        f'{tags} '
+        f'{document.get("text", "")}'
     )
 
 
@@ -122,10 +122,10 @@ def format_context(context_matches: list[dict[str, Any]]) -> str:
         context_blocks.append(
             "\n".join(
                 [
-                    f"Source ID: {document["id"]}",
-                    f"Title: {document["title"]}",
-                    f"Category: {document["category"]}",
-                    f"Content: {document["text"]}",
+                    f'Source ID: {document["id"]}',
+                    f'Title: {document["title"]}',
+                    f'Category: {document["category"]}',
+                    f'Content: {document["text"]}',
                 ]
             )
         )
